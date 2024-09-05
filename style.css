@@ -1,0 +1,79 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: Calibri, Ebrima, "DejaVu sans", Corbel, Tahoma, Helvetica, Arial, sans-serif;
+  background-color: #ccc;
+  background-size: 120px 120px;
+  background-image: url("images/tile.svg");
+  background-position: 20px 10px;
+  animation: move 6s linear infinite;
+}
+@keyframes move {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 240px 120px;
+  }
+}
+.header {
+  font-weight: bold;
+  text-align: center;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 20px;
+  filter: drop-shadow(0 10px 10px #00000055);
+}
+.header h1 {
+  margin: 0;
+  padding: 0;
+}
+.header a {
+  color: #000;
+  text-decoration: none;
+}
+.sticky {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  padding: 20px;
+  padding-bottom: 0;
+}
+.content {
+  background-color: #eee;
+  min-height: 100vh;
+  width: 60vw;
+  margin-left: 20vw;
+  border-radius: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  filter: drop-shadow(0 0 10px #00000055);
+  z-index: 0;
+}
+.content div p {
+  text-indent: 40px;
+}
+.content div {
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-top: 1px;
+}
+@media screen and (max-width: 720px) {
+  .content {
+    min-height: 100vh;
+    width: auto;
+    margin-left: 40px;
+    border-radius: 20px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    margin-right: 40px;
+  }
+}
+img {
+  height: 240px;
+  display: inline-block;
+}
+marquee {
+  overflow: hidden;
+  height: 260px;
+}
